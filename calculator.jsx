@@ -167,12 +167,6 @@ function Calculator({ lang, scores, setScores, sex, setSex, goto }) {
         <div style={calcStyles.headerActions}>
           <button style={calcStyles.ghostBtn} onClick={() => setScores(DEMO_SCORES)}>{t.loadDemo}</button>
           <button style={calcStyles.ghostBtn} onClick={() => { setScores(INITIAL_SCORES); setSex(null); }}>{t.reset}</button>
-          <button style={calcStyles.primaryBtn} onClick={() => window.print()}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{marginRight: 6}}>
-              <path d="M7 4h10v6M5 10h14v8h-3v3H8v-3H5v-8zM8 16h8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            {t.exportPdf}
-          </button>
         </div>
       </div>
 

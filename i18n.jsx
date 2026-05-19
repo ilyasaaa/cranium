@@ -77,7 +77,6 @@ const STRINGS = {
     warnBest:    "Модель показывает наилучшую точность в этом диапазоне.",
     enterData:   "Введите данные осмотра, чтобы увидеть результат",
     needSex:     "Выберите пол индивида, чтобы начать",
-    exportPdf:   "Экспорт PDF",
     reset:       "Сбросить",
     loadDemo:    "Демо-данные",
 
@@ -197,7 +196,6 @@ const STRINGS = {
     warnBest:    "The model is at its most accurate in this range.",
     enterData:   "Enter examination data to see a result",
     needSex:     "Choose sex of the individual to begin",
-    exportPdf:   "Export PDF",
     reset:       "Reset",
     loadDemo:    "Demo data",
 
