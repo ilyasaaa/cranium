@@ -415,19 +415,16 @@ function StadiaVaultBody({ lang }) {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <picture style={{ display: "block", width: "100%" }}>
-        <source srcSet="assets/plate-stadia-vault.avif" type="image/avif" />
-        <img
-          src="assets/plate-stadia-vault.jpg"
-          alt="Stadia obliterationis suturarum"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-            border: "1px solid var(--line-2)",
-          }}
-        />
-      </picture>
+      <img
+        src="assets/plate-stadia-vault.jpg"
+        alt="Stadia obliterationis suturarum"
+        style={{
+          width: "100%",
+          height: "auto",
+          display: "block",
+          border: "1px solid var(--line-2)",
+        }}
+      />
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(4, 1fr)",
@@ -477,19 +474,16 @@ function StadiaPalateBody({ lang }) {
   ];
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <picture style={{ display: "block", width: "100%" }}>
-        <source srcSet="assets/plate-stadia-palate.avif" type="image/avif" />
-        <img
-          src="assets/plate-stadia-palate.jpg"
-          alt="Stadia suturae palatinae"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-            border: "1px solid var(--line-2)",
-          }}
-        />
-      </picture>
+      <img
+        src="assets/plate-stadia-palate.jpg"
+        alt="Stadia suturae palatinae"
+        style={{
+          width: "100%",
+          height: "auto",
+          display: "block",
+          border: "1px solid var(--line-2)",
+        }}
+      />
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(2, 1fr)",
