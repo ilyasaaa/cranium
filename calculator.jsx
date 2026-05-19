@@ -1,21 +1,21 @@
 // Calculator screen — skull-centric, real-time
 const { useState: useStateC, useMemo: useMemoC } = React;
 
-// initial scores: undefined means unentered
+// initial scores: default all to 1 so age computes immediately and markers
+// show in-range values instead of their numeric index
 const INITIAL_SCORES = {
-  midlambdoid_L: null, midlambdoid_R: null,
-  lambda: null,
-  obelion: null,
-  antSagittal: null,
-  bregma: null,
-  midcoronal_L: null, midcoronal_R: null,
-  pterion_L: null, pterion_R: null,
-  sphenofrontal_L: null, sphenofrontal_R: null,
-  infSpheno_L: null, infSpheno_R: null,
-  supSpheno_L: null, supSpheno_R: null,
-  // palate — binary 0/1, default to 0 (suture distinct / unobliterated)
-  transverseL: 0, transverseR: 0,
-  medAnt: 0, medPost: 0,
+  midlambdoid_L: 1, midlambdoid_R: 1,
+  lambda: 1,
+  obelion: 1,
+  antSagittal: 1,
+  bregma: 1,
+  midcoronal_L: 1, midcoronal_R: 1,
+  pterion_L: 1, pterion_R: 1,
+  sphenofrontal_L: 1, sphenofrontal_R: 1,
+  infSpheno_L: 1, infSpheno_R: 1,
+  supSpheno_L: 1, supSpheno_R: 1,
+  transverseL: 1, transverseR: 1,
+  medAnt: 1, medPost: 1,
 };
 
 const DEMO_SCORES = {
