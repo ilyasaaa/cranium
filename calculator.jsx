@@ -13,9 +13,9 @@ const INITIAL_SCORES = {
   sphenofrontal_L: null, sphenofrontal_R: null,
   infSpheno_L: null, infSpheno_R: null,
   supSpheno_L: null, supSpheno_R: null,
-  // palate
-  transverseL: null, transverseR: null,
-  medAnt: null, medPost: null,
+  // palate — binary 0/1, default to 0 (suture distinct / unobliterated)
+  transverseL: 0, transverseR: 0,
+  medAnt: 0, medPost: 0,
 };
 
 const DEMO_SCORES = {
