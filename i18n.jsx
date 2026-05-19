@@ -11,7 +11,7 @@ const STRINGS = {
     h1Part1:     "Сколько лет",
     h1Part2:     "этому черепу",
     h1Part3:     "?",
-    leadKicker:  "Регрессионная модель Самохиной",
+    leadKicker:  "Регрессионная модель LRM4D",
     lead:        "Веб-инструмент для судебных антропологов и остеологов. Десять баллов облитерации швов свода, четыре нёбных шва, пол — и комплексная модель возвращает расчётный возраст за миллисекунды.",
     formulaLabel:"Ядро модели",
     sLabel:      "сумма баллов Meindl & Lovejoy",
@@ -32,7 +32,7 @@ const STRINGS = {
     authorsTitle:"Авторы",
     authors:     [
       ["Самохина Майя Ильинична", "автор · РГПУ им. Герцена"],
-      ["Никитина Елена Александровна", "научный руководитель"],
+      ["Никитина Екатерина Александровна", "научный руководитель"],
       ["Широбоков Иван Григорьевич", "консультант · МАЭ РАН"]
     ],
     disclaimer:  "Инструмент носит вспомогательный характер и не заменяет комплексное экспертное исследование. Не апробирован на иных этнических группах.",
@@ -86,8 +86,8 @@ const STRINGS = {
 
     // Comparison
     compareTitle:  "Сравнение методик",
-    compareLead:   "Три подхода к оценке возраста по черепу — на одной выборке. Модель Самохиной устойчивее в средних диапазонах; DRNNAGE — для возрастных индивидов.",
-    methodA:       "Модель Самохиной (2026)",
+    compareLead:   "Три подхода к оценке возраста по черепу — на одной выборке. Модель LRM4D устойчивее в средних диапазонах; DRNNAGE — для возрастных индивидов.",
+    methodA:       "Модель LRM4D (2026)",
     methodADesc:   "Комплексная регрессия по сводным и нёбным швам",
     methodB:       "Meindl & Lovejoy (1985)",
     methodBDesc:   "Классическая шкала по 10 участкам свода",
@@ -95,7 +95,7 @@ const STRINGS = {
     methodCDesc:   "Нейросетевая модель по 10 участкам свода",
     ageGroup:      "Возрастная группа",
     recTitle:      "Рекомендация",
-    recBody:       "Для индивидов моложе 40 лет — модель Самохиной или Meindl & Lovejoy. Для лиц старше 60 — DRNNAGE.",
+    recBody:       "Для индивидов моложе 40 лет — модель LRM4D или Meindl & Lovejoy. Для лиц старше 60 — DRNNAGE.",
 
     // anatomy labels
     sites: {
@@ -132,7 +132,7 @@ const STRINGS = {
     h1Part1:     "How old is",
     h1Part2:     "this skull",
     h1Part3:     "?",
-    leadKicker:  "Samokhina's regression model",
+    leadKicker:  "LRM4D regression model",
     lead:        "A web tool for forensic anthropologists and osteologists. Ten cranial-vault closure scores, four palatine sutures, sex — and a composite regression returns an age estimate in milliseconds.",
     formulaLabel:"Model core",
     sLabel:      "sum of Meindl & Lovejoy scores",
@@ -153,7 +153,7 @@ const STRINGS = {
     authorsTitle:"Authors",
     authors:     [
       ["Mayya I. Samokhina", "author · Herzen University"],
-      ["Elena A. Nikitina", "supervisor"],
+      ["Ekaterina A. Nikitina", "supervisor"],
       ["Ivan G. Shirobokov", "advisor · MAE RAS"]
     ],
     disclaimer:  "This tool is auxiliary and does not replace expert examination. Not validated on populations outside the training sample.",
@@ -204,8 +204,8 @@ const STRINGS = {
     hide:         "Hide",
 
     compareTitle:  "Method comparison",
-    compareLead:   "Three approaches to skull age estimation, evaluated on the same sample. Samokhina's model is more stable in middle ranges; DRNNAGE wins for older individuals.",
-    methodA:       "Samokhina's model (2026)",
+    compareLead:   "Three approaches to skull age estimation, evaluated on the same sample. The LRM4D model is more stable in middle ranges; DRNNAGE wins for older individuals.",
+    methodA:       "LRM4D model (2026)",
     methodADesc:   "Composite regression on vault + palatine sutures",
     methodB:       "Meindl & Lovejoy (1985)",
     methodBDesc:   "Classical 10-site vault scale",
@@ -213,7 +213,7 @@ const STRINGS = {
     methodCDesc:   "Neural-network model on 10 vault sites",
     ageGroup:      "Age group",
     recTitle:      "Recommendation",
-    recBody:       "For individuals younger than 40 — Samokhina or Meindl & Lovejoy. For ≥ 60 — DRNNAGE.",
+    recBody:       "For individuals younger than 40 — LRM4D or Meindl & Lovejoy. For ≥ 60 — DRNNAGE.",
 
     sites: {
       midlambdoid: ["Midlambdoid", "Mid-lambdoid suture"],
@@ -259,7 +259,7 @@ function maeForAge(age) {
 }
 
 const COMPARISON_DATA = [
-  // mae for Samokhina / M&L / DRNNAGE
+  // mae for LRM4D / M&L / DRNNAGE
   { group: "≤ 29",  mae: [13.6, 11.4, 16.8] },
   { group: "30–39", mae: [ 6.9,  7.2,  9.1] },
   { group: "40–49", mae: [ 4.6,  6.8,  7.2] },
